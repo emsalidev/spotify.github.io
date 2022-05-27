@@ -1,0 +1,204 @@
+@import url("https://fonts.googleapis.com/css2?family=Yeseva+One&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Exo+2:wght@300;400&display=swap");
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  overflow: hidden;
+}
+
+.logo {
+  width: 11.5%;
+  height: auto;
+  cursor: pointer;
+  margin-left: -1px;
+}
+
+li,
+a {
+  font-family: "Roboto", sans-serif;
+  font-weight: 700;
+  font-size: 16px;
+  color: white;
+  text-decoration: none;
+  letter-spacing: 1px;
+  margin-right: -5px;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 5%;
+  background-color: black;
+  position: fixed;
+  top: 0;
+  z-index: 1;
+}
+
+nav ul {
+  list-style: none;
+}
+
+nav ul li {
+  display: inline-block;
+  padding: 0 25px;
+}
+
+/* nav ul li a {
+  transition: 0.5s;
+}
+
+nav ul li a:hover {
+  color: #1db954;
+  transition: 0.5s;
+} */
+
+nav ul li a {
+  display: inline-block;
+  position: relative;
+  color: white;
+}
+
+nav ul li a:after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  transform: scaleX(0);
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  background-color: #1db954;
+  transform-origin: bottom right;
+  transition: transform 0.25s ease-out;
+}
+
+nav ul li a:hover:after {
+  transform: scaleX(1);
+  transform-origin: bottom left;
+}
+button {
+  padding: 9px 25px;
+  border: none;
+  border-radius: 50px;
+  cursor: pointer;
+  transition: all 0.3s ease 0s;
+}
+
+button:hover {
+  background-color: #1db954;
+  transform: scale(1.4);
+  color: white;
+}
+
+.one {
+  margin-left: 25px;
+  margin-right: 25px;
+}
+
+main {
+  background-color: rgb(41, 65, 171);
+  background-size: 215%;
+  height: 100vh;
+  justify-content: center;
+  text-align: center;
+  vertical-align: center;
+  align-items: center;
+  display: flex;
+}
+
+.shape1 {
+  position: absolute;
+  bottom: -600px;
+  left: -300px;
+  background-color: #32e671;
+  width: 800px;
+  height: 800px;
+  border-radius: 50%;
+}
+
+.shape2 {
+  position: absolute;
+  background-color: #32e671;
+  border-radius: 50%;
+  width: 600px;
+  height: 600px;
+  top: 100px;
+  left: 1300px;
+}
+
+.shape3 {
+  position: absolute;
+  background-color: rgb(41, 65, 171);
+  border-radius: 50%;
+  width: 200px;
+  height: 200px;
+  top: 500px;
+  left: -80px;
+}
+
+.shape4 {
+  position: absolute;
+  transform: translate(-50%, -50%);
+  height: 100px;
+  width: 200px;
+  border-radius: 150px 150px 0 0;
+  background-color: #32e671;
+  top: 567px;
+  left: 18px;
+}
+
+.shape5 {
+  position: absolute;
+  background-color: #32e671;
+  border-radius: 50%;
+  width: 100px;
+  height: 100px;
+  top: 20%;
+  left: 5%;
+}
+
+.listening {
+  position: relative;
+  top: 30px;
+  left: -100px;
+  font-size: 150px;
+  font-family: "Exo 2", sans-serif;
+  color: #32e671;
+}
+
+.everything {
+  position: relative;
+  top: -10px;
+  right: -100px;
+  font-size: 150px;
+  font-family: "Exo 2", sans-serif;
+  color: #32e671;
+}
+
+main p {
+  font-size: 20px;
+  margin-top: 50px;
+  color: #32e671;
+}
+
+.btn {
+  position: relative;
+  top: 50px;
+  padding: 14px 60px;
+  font-size: 20px;
+  background-color: #32e671;
+  color: white;
+}
+
+.btn:hover {
+  transform: scale(1.2);
+}
+
+.btn:active {
+  border: 2px solid white;
+}
